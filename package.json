@@ -13,38 +13,39 @@
   ],
   "keywords": [
     "egg",
-    "plugin",
+    "egg-plugin",
+    "eggPlugin",
     "tracer",
     "traceId",
     "spanId",
     "parentSpanId"
   ],
   "dependencies": {
-    "uuid": "^2.0.2"
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
-    "egg-ci": "1",
-    "egg-bin": "1",
-    "egg": "*",
-    "egg-mock": "*",
-    "autod": "2",
-    "eslint": "3",
-    "eslint-config-egg": "3",
-    "supertest": "2"
+    "autod": "^2.7.1",
+    "egg": "^0.10.0",
+    "egg-bin": "^2.0.2",
+    "egg-ci": "^1.1.0",
+    "egg-mock": "^2.3.1",
+    "eslint": "^3.14.1",
+    "eslint-config-egg": "^3.2.0",
+    "supertest": "^3.0.0"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "scripts": {
-    "test": "npm run lint && npm run test-local",
+    "autod": "autod",
+    "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
-    "lint": "eslint --ext js . --fix",
-    "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
   },
   "ci": {
-    "version": "4, 6"
+    "version": "6, 7"
   },
   "repository": {
     "type": "git",
