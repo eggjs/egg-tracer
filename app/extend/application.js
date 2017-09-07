@@ -1,22 +1,3 @@
 'use strict';
 
-const cacheTracer = Symbol('before_app_ready_tracer');
-const isReady = Symbol.for('egg_tracer_app_is_ready');
-
-module.exports = {
-  get tracer() {
-    if (this[isReady]) {
-      return new this.config.tracer.Class({
-        app: this,
-      });
-    }
-
-    if (!this[cacheTracer]) {
-      this[cacheTracer] = new this.config.tracer.Class({
-        app: this,
-      });
-    }
-
-    return this[cacheTracer];
-  },
-};
+module.exports = require('../../lib/index.js');

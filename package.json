@@ -7,9 +7,12 @@
   },
   "main": "lib/tracer.js",
   "files": [
+    "lib",
     "app",
     "config",
-    "lib"
+    "agent.js",
+    "index.js",
+    "app.js"
   ],
   "keywords": [
     "egg",
@@ -42,7 +45,8 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "npm run lint && npm run cov"
+    "pkgfiles": "egg-bin pkgfiles",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov"
   },
   "ci": {
     "version": "6, 7"
