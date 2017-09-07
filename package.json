@@ -7,9 +7,12 @@
   },
   "main": "lib/tracer.js",
   "files": [
+    "lib",
     "app",
     "config",
-    "lib"
+    "agent.js",
+    "index.js",
+    "app.js"
   ],
   "keywords": [
     "egg",
@@ -28,7 +31,7 @@
     "egg": "^0.10.0",
     "egg-bin": "^2.0.2",
     "egg-ci": "^1.1.0",
-    "egg-mock": "^2.3.1",
+    "egg-mock": "^3.8.0",
     "eslint": "^3.14.1",
     "eslint-config-egg": "^3.2.0",
     "supertest": "^3.0.0"
@@ -42,7 +45,8 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "npm run lint && npm run cov"
+    "pkgfiles": "egg-bin pkgfiles",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov"
   },
   "ci": {
     "version": "6, 7"
