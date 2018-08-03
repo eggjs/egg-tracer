@@ -49,10 +49,11 @@ const Tracer = require('egg-tracer');
 const counter = 0;
 
 class MyTracer extends Tracer {
-  get tracerId() {
+  get traceId() {
     return `${counter++}-${Date.now()}-${process.pid}`;
   }
 }
+module.exports = MyTracer;
 ```
 
 Change the config to use `MyTracer`:
