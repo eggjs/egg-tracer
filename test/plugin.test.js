@@ -7,8 +7,9 @@ describe('test/plugin.test.js', () => {
   before(() => {
     app = mm.app({
       baseDir: 'apps/plugin-test',
+      cache: false,
     });
-    app.ready();
+    return app.ready();
   });
 
   after(() => app.close());

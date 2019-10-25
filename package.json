@@ -24,17 +24,17 @@
     "parentSpanId"
   ],
   "dependencies": {
-    "uuid": "^3.0.1"
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "autod": "^2.7.1",
-    "egg": "^0.10.0",
-    "egg-bin": "^2.0.2",
-    "egg-ci": "^1.1.0",
-    "egg-mock": "^3.8.0",
-    "eslint": "^3.14.1",
-    "eslint-config-egg": "^3.2.0",
-    "supertest": "^3.0.0"
+    "autod": "^3.1.0",
+    "egg": "^2.24.0",
+    "egg-bin": "^4.14.0",
+    "egg-ci": "^1.13.0",
+    "egg-mock": "^3.24.1",
+    "eslint": "^6.5.1",
+    "eslint-config-egg": "^7.5.1",
+    "supertest": "^4.0.2"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -49,7 +49,7 @@
     "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov"
   },
   "ci": {
-    "version": "6, 8"
+    "version": "6, 8, 10, 12"
   },
   "repository": {
     "type": "git",

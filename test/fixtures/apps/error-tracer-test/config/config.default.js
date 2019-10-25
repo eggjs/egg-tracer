@@ -9,7 +9,6 @@ exports.tracer = {
   Class: class Tracer {
     constructor(ctx) {
       this.ctx = ctx;
-      this.name = ctx.locals.name;
     }
 
     get traceId() {
@@ -20,3 +19,5 @@ exports.tracer = {
     }
   },
 };
+
+exports.keys = '123456';
