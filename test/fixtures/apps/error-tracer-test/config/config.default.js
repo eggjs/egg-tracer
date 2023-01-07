@@ -1,4 +1,4 @@
-'use strict';
+exports.keys = 'foo';
 
 /**
  * tracer config

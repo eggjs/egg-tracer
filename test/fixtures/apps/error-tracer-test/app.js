@@ -1,6 +1,3 @@
-'use strict';
-
-
 module.exports = app => {
   const appBeforeReadyTracers = [];
   const appAfterReadyTracers = [];
