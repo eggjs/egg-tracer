@@ -1,5 +1,3 @@
-'use strict';
-
 const mm = require('egg-mock');
 const assert = require('assert');
 
@@ -16,7 +14,7 @@ describe('test/tracer.test.js', () => {
 
   afterEach(mm.restore);
 
-  it('should get app, agent tracer', function* () {
+  it('should get app, agent tracer', () => {
     assert(app[Symbol.for('egg_tracer_is_ready')]);
     assert(app.agent[Symbol.for('egg_tracer_is_ready')]);
 

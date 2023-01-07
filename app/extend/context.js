@@ -1,5 +1,3 @@
-'use strict';
-
 const TRACER = Symbol('tracer');
 
 module.exports = {

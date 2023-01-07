@@ -1,14 +1,12 @@
-'use strict';
-
 const mm = require('egg-mock');
 
 describe('test/plugin.test.js', () => {
   let app;
-  before(() => {
+  before(async () => {
     app = mm.app({
       baseDir: 'apps/plugin-test',
     });
-    app.ready();
+    await app.ready();
   });
 
   after(() => app.close());

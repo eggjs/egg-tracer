@@ -1,6 +1,3 @@
-'use strict';
-
-
 module.exports = agent => {
   const agentBeforeReadyTracers = [];
   const agentAfterReadyTracers = [];
