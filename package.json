@@ -27,11 +27,11 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "egg": "^3.12.0",
-    "egg-bin": "^5.11.3",
-    "egg-mock": "^5.7.1",
-    "eslint": "^8.31.0",
-    "eslint-config-egg": "^12.1.0",
+    "egg": "^3.16.0",
+    "egg-bin": "^6.4.0",
+    "egg-mock": "^5.10.6",
+    "eslint": "^8.41.0",
+    "eslint-config-egg": "^12.2.1",
     "tsd": "^0.28.1"
   },
   "engines": {
