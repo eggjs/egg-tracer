@@ -6,13 +6,15 @@
     "name": "tracer"
   },
   "main": "lib/tracer.js",
+  "types": "index.d.ts",
   "files": [
     "lib",
     "app",
     "config",
     "agent.js",
     "index.js",
-    "app.js"
+    "app.js",
+    "index.d.ts"
   ],
   "keywords": [
     "egg",
@@ -29,7 +31,8 @@
     "egg-bin": "^5.11.3",
     "egg-mock": "^5.7.1",
     "eslint": "^8.31.0",
-    "eslint-config-egg": "^12.1.0"
+    "eslint-config-egg": "^12.1.0",
+    "tsd": "^0.28.1"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -38,7 +41,8 @@
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
-    "lint": "eslint .",
+    "tsd": "tsd",
+    "lint": "eslint . && npm run tsd",
     "ci": " npm run lint && npm run cov"
   },
   "repository": {
